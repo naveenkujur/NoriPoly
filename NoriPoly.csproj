@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net9.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <OutDir>..\Bin</OutDir>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="Nori.Core">
+      <HintPath>N:\Bin\Nori.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Nori.WGL">
+      <HintPath>N:\Bin\Nori.WGL.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Reactive" Version="6.0.1" />
+  </ItemGroup>
+
+</Project>
