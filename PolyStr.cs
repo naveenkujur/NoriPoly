@@ -10,7 +10,7 @@ class PolyStr : INotifyPropertyChanged {
       Str = str;
       try {
          Poly = Poly.Parse (str);
-      } catch { return; }
+      } catch { Poly = null; }
       PropertyChanged?.Invoke (this, new PropertyChangedEventArgs (null));
    }
 
