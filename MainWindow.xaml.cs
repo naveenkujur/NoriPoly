@@ -12,8 +12,10 @@ public partial class MainWindow : Window {
       mStr.TextChanged += delegate { mPolyStr.UpdateStr (mStr.Text); };
    }
 
-   void OnLuxReady (int _) =>
+   void OnLuxReady (int _) {
+      new SceneManipulator ();
       Lux.UIScene = new PolyScene (mPolyStr);
+   }
 
    readonly PolyStr mPolyStr = new ();
 }
